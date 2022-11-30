@@ -3,7 +3,7 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-}@media screen and (max-width:600px)
+}@media screen and (max-width:480px)
 {
     .navbarsection .navbar-nav .nav-item .nav-link{
         text-align: center;
@@ -11,17 +11,50 @@
     .navbarsection .navbar-nav .nav-item .nav-link:hover{
         color:rgb(243, 57, 57);
     }
+
+    h2{
+        font-weight: normal;
+        font-size: 16px;
+        color:rgb(201, 55, 55);
+    }
+    h3{
+        text-transform: uppercase;
+       font-weight: bolder;
+        font-size:10px;
+        color:blue;
+        line-height:20px;
+    }
+    h4{
+        font-size: 10px;
+        color:red;
+        line-height:10px;
+    }
+    h5{
+        color:black;
+        font-size:21px;
+        line-height:30px;
+    }
+    p{
+        font-size: 18px;
+        line-height:30px;
+    }
+    
+    #col{
+        box-shadow:none;
+        border-radius:0px;
+    }
     #homeinfo{
        margin-top:60px; 
     }
     #mypic{
-        margin-top:40px;
+       height:90px;
+       width:100%;
+       margin-top:40px;
+        outline:2px solid blue;
+        transition:all 1.7s ease-in-out;
     }
     .aboutme{
         margin:40px 5px 0px 5px;
-    }
-    #projects h2{
-        font-size:23px;
     }
     #home h3{
         font-size: 20px;
@@ -35,13 +68,18 @@
     .social-icons{
         margin:2px;
     }
+    #projects #project-heading{
+        font-size:20px;
+        font-weight: 400;
+    }
     #projects .card a{
         text-decoration: none;
         /* color:rgb(211, 30, 90); */
         color:blue;
-        font-size:20px;
+        font-size:15px;
     }
 
+    
     #home h2::after{
         content:'';
         width:40%;
@@ -53,9 +91,9 @@
         overflow-x: hidden;
     }
 }
-@media screen and (max-width:1000px)
+@media screen and (max-width:888px)
 {
-    .navbarsection .navbar-nav .nav-item .nav-link{
+    .navbarsection .navbar-nav .nav-item a{
         text-align: center;
     }
     .navbarsection .navbar-nav .nav-item .nav-link:hover{
@@ -67,4 +105,10 @@
     #about h3{
         font-size: 25px;
     }
+    #mypic{
+        height:90px;
+        width:80%;
+margin:20%;
+         transition:all 1.7s ease-in-out;
+     }
 }

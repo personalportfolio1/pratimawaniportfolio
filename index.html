@@ -6,44 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsivestyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css"
-        integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
+<body data-bs-spy=" scroll" data-bs-target=".navbar" data-bs-offset="100">
     <!-- navbar -->
-    <div class="navbarsection">
+    <div class="navbarsection ">
         <nav class="navbar navbar-expand-lg bg-light navbar-light ">
             <div class="container">
-                <a href=""  id="brand" class="nav-brand ">Portfolio</a>
+                <a href="" id="brand" class="nav-brand ">Portfolio</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+                <div class="collapse navbar-collapse d-flex justify-content-end " id="mynavbar">
                     <ul class="navbar-nav  ">
-                        <li class="nav-item pl-5">
+                        <li class="nav-item me-5">
                             <a href="#home" class="nav-link">Home</a>
                         </li>
-                        <li class="nav-item pl-5">
+                        <li class="nav-item me-5">
                             <a href="#about" class="nav-link">About</a>
                         </li>
-                        <li class="nav-item pl-5">
+                        <li class="nav-item me-5">
                             <a href="#projects" class="nav-link">Projects</a>
                         </li>
-                        <li class="nav-item pl-5">
+                        <li class="nav-item me-5">
                             <a href="#contact" class="nav-link">Contact</a>
                         </li>
                     </ul>
@@ -53,96 +41,302 @@
     </div>
     <!-- Home -->
     <section id="home" class="bg-light m-5">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-8 order-lg-1 order-2" id="homeinfo">
-                    <h2> Hello</h2>
-                    <h3>I am Pratima Wani</h3>
-                    <h4>Web Developer</h4>
-                    <h5>Qualification:</h5>
-                    <p> Bacholer of Computer Science<b>(BCS)</b><br><b>From : </b>K.J Somaiya
-                        College,Kopargaon<br><b>Pune University</b></p>
-                </div>
-                <div class="col-lg-4  text-center order-lg-2 order-1">
-                    <img id="mypic" src="images/pratimapic.jpg" class="img-fluid rounded-circle">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section -->
-    <section id="about">
-        <div class="container mt-5 bg-light">
-            <h3 class="text-center mt-5 mb-5">Let's Introduce about myself</h3>
-            <div class="row  mb-4">
-                <div class="col-lg-5 text-center">
-                    <img src="images/aboutme.png" class="img-fluid img-thumbnail" width="500px"></img>
-                </div>
-                <div class="col-lg-7 aboutme">
-                    <p>I am a Frontend Developer. I have a 2 years of experience in <b>frontend development.</b></p>
-                    <p>I am live in Pune.I am a very honest kind of person.I had like to learn a new things and improve
-                        my skills continuously.I want to work on differnt domains to learn a differn things.</p>
-                    <a href="resume/PratimaResume.docx" class="btn btn-warning " id="downloadcvbtn">Download CV</a>
+        <div class="container ">
+            <div class="row  p-3" id="row">
+                <div class="col-lg-9  mx-lg-auto  " id="col">
+                    <div class="row p-5">
+                        <div class="col-lg-8 col-md-12 order-lg-1 order-md-2  ">
+                            <div class="info ">
+                                <h2> Hello</h2>
+                                <h3>I am Pratima Wani</h3>
+                                <h4>Web Developer</h4>
+                                <h5>Qualification:</h5>
+                                <p> Bacholer of Computer Science<b>(BCS)</b><br><b>From : </b>K.J Somaiya
+                                    College,Kopargaon<br><b>Pune University</b></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 order-lg-2 order-md-1  mb-md-5">
+                            <img id="mypic" src="images/pratimapic.jpg" class=" rounded">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
+    <!-- about section start -->
+    <div class="container  bg-light" id="about">
+        <h3 class="text-center mt-5 mb-5">Let's Introduce about myself</h3>
+        <div class="row  mb-4">
+            <div class="col-lg-5 text-center">
+                <img src="images/aboutme.png" class="img-fluid img-thumbnail" width="500px"></img>
+            </div>
+            <div class="col-lg-7 aboutme">
+                <div class="row ">
+                    <div class="col-12 mt-md-5">
+                        <p>I am a Frontend Developer. I have a 2 years of experience in <b>frontend development.</b>
+                        </p>
+                        <p>I am live in Pune.I am a very honest kind of person.I had like to learn a new things and
+                            improve
+                            my skills continuously.I want to work on differnt domains to learn a differn things.</p>
+                        <div class="resumebtn text-center">
+                            <a href="resume/PratimaResume.docx" class="btn btn-warning " id="downloadcvbtn">Download
+                                CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <h5>Skills</h5>
+                        <div class="html">
+                            <div class="html-skill d-flex justify-content-between">
+                                <div class="htmlhead">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="perc">
+                                    <p>100%</p>
+                                </div>
+                            </div>
+                            <div class="progress" style="height:10px;">
+                                <div class="progress-bar bg-primary progress-bar-striped" style="width:99%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css">
+                            <div class="css-skill d-flex justify-content-between">
+                                <div class="htmlhead">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="perc">
+                                    <p>99%</p>
+                                </div>
+                            </div>
+                            <div class="progress" style="height:10px;">
+                                <div class="progress-bar bg-secondary progress-bar-striped" style="width:99%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="js">
+                            <div class="js d-flex justify-content-between">
+                                <div class="js">
+                                    <p>javascript</p>
+                                </div>
+                                <div class="perc">
+                                    <p>90%</p>
+                                </div>
+                            </div>
+                            <div class="progress" style="height:10px;">
+                                <div class="progress-bar bg-info progress-bar-striped" style="width:99%"></div>
+                            </div>
+                        </div>
+                        <div class="html5">
+                            <div class="html d-flex justify-content-between">
+                                <div class="htmlhead">
+                                    <p>HTML5</p>
+                                </div>
+                                <div class="perc">
+                                    <p>95%</p>
+                                </div>
+                            </div>
+                            <div class="progress" style="height:10px;">
+                                <div class="progress-bar bg-success progress-bar-striped" style="width:99%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="css3">
+                            <div class="css3 d-flex justify-content-between">
+                                <div class="htmlhead">
+                                    <p>CSS3</p>
+                                </div>
+                                <div class="perc">
+                                    <p>95%</p>
+                                </div>
+                            </div>
+                            <div class="progress" style="height:10px;">
+                                <div class="progress-bar bg-danger progress-bar-striped" style="width:99%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bootstrap">
+                            <div class="bootstrap d-flex justify-content-between">
+                                <div class="bootstrap">
+                                    <p>Bootstrap</p>
+                                </div>
+                                <div class="perc">
+                                    <p>95%</p>
+                                </div>
+                            </div>
+                            <div class="progress" style="height:10px;">
+                                <div class="progress-bar bg-warning progress-bar-striped" style="width:99%">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jquery">
+                            <div class="jquery d-flex justify-content-between">
+                                <div class="jquery">
+                                    <p>jquery</p>
+                                </div>
+                                <div class="perc">
+                                    <p>92%</p>
+                                </div>
+                            </div>
+                            <div class="progress" style="height:10px;">
+                                <div class="progress-bar bg-dark progress-bar-striped" style="width:99%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- about section end -->
     <!-- projects section -->
-    <section id="projects">
-        <div class="container mt-5">
-            <div class="row image">
-                <div class="col-12 ">
-                    <h2 class="text-center mb-3 mt-3">Projects made by me</h2>
-                    <div class="row" id="myprojects">
-                        <div class="card">
-                            <a href="https://www.visitflorida.com/" class="projectlinks">www.visitflorida.com</a>
-                        </div>
-                        <div class="card">
-                            <a href="https://winedelivery.co.uk/" class="projectlinks">https://winedelivery.co.uk/</a>
-                        </div>
-                        <div class="card">
-                            <a href="https://www.talk.edu/" class="projectlinks">https://www.talk.edu/</a>
-                        </div>
-                    </div>
+    <div class="container bg-light  " id="projects">
+        <h5 class="text-center pt-5 " id="project-heading"> I have work on the following projects </h5>
+        <div class="row mt-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5 ">
+                <div class="card ">
+                    <a href="https://www.visitflorida.com/" class="projectlinks">www.visitflorida.com</a>
+                    <p>This website is related to beaches available in florida.In this websites user can easily find the
+                        information of beaches according to the user choice.<br>Where to stay?<br>What to do? <br>all
+                        information is provided.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5 ">
+                <div class="card ">
+                    <a href="https://winedelivery.co.uk/" class="projectlinks">https://winedelivery.co.uk/</a>
+                    <p>This website is releted to the wine delivery.In US most of the people are gives a gift to their
+                        friends.So this website is mostly designed for our US clients. </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <div class="card">
+                    <a href="https://www.talk.edu/" class="projectlinks">https://www.talk.edu/</a>
+                    <p>This website is related to the education. All types of cources are available on this
+                        website.Studens can easily entered into the cource according to their choice.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <div class="card">
+                    <a href="https://syska.co.in/c" class="projectlinks">https://syska.co.in/c</a>
+                    <p>This website is designed for the purpose of selling the electronic products like our Home
+                        Appliances,Personal care devices,Cables etc.All types of products are available on this
+                        websites.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <div class="card">
+                    <a href="https://winedelivery.co.uk/" class="projectlinks">https://winedelivery.co.uk/</a>
+                    <p>This website is releted to the wine delivery.In US most of the people are gives a gift to their
+                        friends.So this website is mostly designed for our US clients. </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <div class="card">
+                    <a href="https://cncstagecrafts.com/" class="projectlinks">https://cncstagecrafts.com/</a>
+                    <p>This website is designed for the growing the students skill. In that various type of trainings
+                        are provide to the students such as<br> photograpy,&nbsp;&nbsp;Script Writing,Dancing<br>Film &
+                        theater acting,Cinematography etc.Using this websites students can easily growing themself.</p>
                 </div>
             </div>
         </div>
-       
-    </section>
+        
+    </div>
+
+    <!-- <projects end -->
+
     <!-- Contact Me -->
-    <section id="contact">
-        <div class="container-fluid mt-3" >
-
-            <div class="row">
-                <div class="col">
-                    <h2 class="text-center contactme">Contact me</h2>
-                    <div class="icons text-center m-5">
-                        <a href="https://api.whatsapp.com/send?phone=7218879906" class="social-icons">
-                            <i class="fab fa-2x fa-whatsapp"></i>
-                        </a>
-                        <a href="mailto:pratimawani271998@gmail.com" class="social-icons">
-                            <i class="far fa-2x fa-envelope"></i>
-                        </a>
-                        <!-- <a href="" class="social-icons">
-                            <i class="fab fa-2x fa-facebook"></i>
-                        </a> -->
-                        <a href="" class="social-icons">
-                            <i class="fab fa-2x fa-instagram"></i>
-                        </a>
-                        <a href="tel:+917218879906" class="social-icons">
-                            <i class="fas fa-2x fa-phone-volume"></i>
-                        </a>
+    <div class="container" id="contact">
+        <div class="row ">
+            <h3 class="text-dark text-center pb-3 pt-5 ">You can contact me here</h3>
+            <div class="col-lg-12   p-3 m-md-3">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-12 bg-white contactme-form">
+                        <form>
+                            <div class="form-group">
+                                <div class="email mt-3">
+                                    <label for="" class="name pb-2">Email:</label>
+                                    <input type="email" class="form-control" placeholder="Enter Email" required>
+                                </div>
+                                <div class=" mt-3">
+                                    <label for="" class="contact  pb-2">Contact No.:</label>
+                                    <input type="text" class="form-control" placeholder="Enter your Contact No."
+                                        required>
+                                </div>
+                                <div class="message mt-3">
+                                    <label for="" class="message pb-2">Message:</label>
+                                    <textarea rows="5" class="form-control" placeholder="message" required>
+                                </textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary mt-3 mb-3 btn-lg">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 col-sm-12 order-lg-2 order-md-1 mt-5 d-flex align-items-center justify-content-center">
+                <div class="card1 bg-light ">
+                    <div class="contactinfom">
+                        <div class="contact mt-3">
+                            <span class="fw-bold cont">
+                                <h5>Contact No:</h5>
+                            </span>
+                            <span>
+                                <h6>+917218879906</h6>
+                            </span>
+                        </div>
+                        <div class="email  mt-3">
+                            <span class="fw-bold cont">
+                                <h5>Email:</h5>
+                            </span>
+                            <span>
+                                <h6>pratimawani271998@gmail.com</h6>
+                            </span>
+                        </div>
                     </div>
                 </div>
+
+            </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- footer -->
+    <div class="container-fluid mt-5 pt-5" id="footer">
+        <div class="row bg-warning align-items-center" id="footer-section">
+            <div class="col-lg-3 col-md-12 ">
+                <div class="social-media-icon  ">
+                    <ul class="list-unstyled d-flex justify-content-around mt-2 ">
+                        <li><a href="https://api.whatsapp.com/send=?7218879906">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a></li>
+                        <li><a href="tel:+7218879906">
+                                <i class="fa-solid fa-phone"></i>
+                            </a></li>
+                        <li><a href="mailto:pratimawani271998@gmail.com">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a></li>
+                        <li><a href="https://www.facebook.com/pratimawani/">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 text-center">
+                <p>&copy;All copyrights are reserved.2020</p>
+            </div>
+            <div class="col-lg-3 col-sm-12 text-center">
+                <p class="text-danger fw-bolder ">Designed By:Pratima Wani</p>
             </div>
         </div>
-    </section>
-    <!-- footer -->
-    <footer class="bg-warning">
-        <h6> &copy; Copyright 2020.All Rights Are Reserved.</h6>
-        <p class="text">Designed By : Pratima Wani</p>
-    </footer>
+    </div>
 
-    <!-- main.js file -->
+
+    <!-- js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"> </script>
     <script src="js/main.js"></script>
 </body>
 
