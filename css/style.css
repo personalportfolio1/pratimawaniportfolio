@@ -70,32 +70,45 @@ outline:unset;
    width:100%;
     outline:2px solid blue;
     transition:all 1.7s ease-in-out;
+    animation:onimage;
+    animation-duration:4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
-#mypic:hover{
-    transform:scale(1.2);
+@keyframes onimage{
+    0%{
+    transform:translateY(0px);
+    transform:rotate(0deg);
+    }
+   50%{
+        transform:translateY(-50px);
+        /* transform:rotate(20deg); */
+        }
+100%{
+    transform:translateY(0px);
+    transform:rotate(0deg);
 }
-h2{
+}
+ #home h2{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 30px;
     color:rgb(201, 55, 55);
 }
-h3{
-    text-transform: uppercase;
-   font-weight: bolder;
-    font-size:30px;
+#home h3{
+    font-size:25px;
     color:blue;
-    line-height:30px;
+    line-height:20px;
 }
-h4{
-    font-size: 30px;
-    color:red;
-    line-height:30px;
+#home h4{
+    font-size: 25px;
+    line-height:25px;
 }
-h5{
+#home h5{
     color:black;
     font-size:21px;
-    line-height:30px;
+    line-height:25px;
+    padding-top:10px;
 }
 p{
     font-size: 18px;
@@ -104,26 +117,39 @@ p{
 #home{
     padding-top:100px;
 }
+#about h3{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+#about p{
+    font-size: 22px;
+    font-weight: normal;
+
+}
+#intro{
+    box-shadow: 0px 10px 10px 0px;
+    border-radius: 30px 30px 30px 30px;
+
+}
 .resumebtn a{
     color:blue;
     font-weight: bold;
-    font-size:23px;
+    font-size:21px;
+    margin-top:30px;
     padding:20px;
     width:300px;
     border-radius:0px 20px 0px 20px;
+    box-shadow:0px 0px 10px;
 }
 .resumebtn a:hover{
     box-shadow:0px 0px 20px black;
     color:blue;
 }
-#about{
-    padding-top:50px;
-}
-#projects{
-    padding-top:50px;
-    /* padding-top:20px; */
-    padding-bottom:40px;
 
+/* project */
+#projects{
+    padding-top:40px;
+    padding-bottom:20px;
 }
  .image{
     height:auto;
@@ -131,8 +157,6 @@ p{
     padding:40px;
    
 }
-
-/* card */
     .card{
         background-color: rgb(18, 18, 59);
        height:300px;
@@ -174,6 +198,10 @@ p{
     #contact{
         padding-top:30px;
     }
+    #contact h3{
+        font-size:35px;
+        text-transform: capitalize;
+    }
     #contact .contactme-form{
         box-shadow:0px 0px 10px;
         border-radius:30px 0px 30px 0px;
@@ -198,6 +226,7 @@ p{
     }
     
 /* footer */
+ 
 #footer-section{
     padding-top:30px;
     padding-bottom:30px;

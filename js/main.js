@@ -1,8 +1,12 @@
 // hide the nav-links
 $(document).ready(function(){
-   $('.nav-link').click(function(){
-       $('.navbar-collapse').collapse('hide');
-   });
+let navbar=document.querySelectorAll(".nav-link");
+let navCollapse=document.querySelector(".navbar-collapse.collapse");
+navbar.forEach(function(a){
+a.addEventListener("click",function(){
+navCollapse.classList.remove("show");
+});
+});
 
 //    let nav=document.querySelector(".navbar");
 //    window.onscroll=function(){
