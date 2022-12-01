@@ -120,10 +120,10 @@ p{
 #about h3{
     text-transform: capitalize;
     letter-spacing: 2px;
-    font-size: 10px;
+    font-size: 33px;
 }
-#about p{
-    font-size: 22px;
+#about #intro p{
+    font-size: 21px;
     font-weight: normal;
 
 }
