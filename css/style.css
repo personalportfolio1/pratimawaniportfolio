@@ -12,22 +12,14 @@
 ::-webkit-scrollbar-thumb{
     background: blue;
 }
-
 #col{
     box-shadow:0px 0px 20px;
     border-radius:0px 40px 0px 40px;
 }
-/* .navbarsection{
-    position:fixed;
-    width:100%;
-    left:0;
-    top:0;
-    z-index:1000;
-    -webkit-transition: all 0.3s ease-out;
-    transition:all 0.3s ease-out;
-    box-shadow:0px 0px 3px 1px;
-
-} */
+.navbarsection{
+    height:5rem;
+    line-height: 2rem;
+}
 .navbarsection .scroll-on{
     position:fixed;
     top:0;
@@ -61,9 +53,6 @@ outline:unset;
     position:relative;
    
 }
-.navbar{
-    border-bottom:1px solid blue;
-}
 .navbarsection .navbar-nav .nav-item .nav-link{
     color:blue;
     transition:all 1s ease-in-out;
@@ -71,9 +60,13 @@ outline:unset;
     font-size:16px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
-.navbarsection .navbar-nav .nav-item .nav-link:hover{
-    color:rgb(243, 57, 57);
+.navbarsection .navbar-nav .nav-item .nav-link:hover,
+.navbarsection .navbar-nav .nav-item .nav-link.active{
+    color:rgb(207, 103, 11);
 }
+/* .navbarsection .navbar-nav .nav-item  .nav-link:active{
+    color:red;
+} */
 #mypic{
     min-height:250px;
    width:100%;
@@ -130,17 +123,24 @@ p{
     text-transform: capitalize;
     letter-spacing: 2px;
     font-size: 33px;
+    position: relative;
 }
-#about #intro p{
-    font-size: 21px;
-    font-weight: normal;
+#about h3:after{
+    content:"";
+position: absolute;
+display: block;
+width:4rem;
+height:4px;
+background: blue;
+bottom:-10px;
+left:calc(50% - 1rem);
+}
+#about .intro p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
 
-}
-#intro{
-    box-shadow: 0px 10px 10px 0px;
-    border-radius: 30px 30px 30px 30px;
-
-}
 .resumebtn a{
     color:blue;
     font-weight: bold;
@@ -155,11 +155,30 @@ p{
     box-shadow:0px 0px 20px black;
     color:blue;
 }
-
+.skillsets{
+    border-radius:20px;
+}
+.skillsets h5{
+    position: relative;
+    font-size: 2rem;
+}
+.skillsets h5:after,#projects h5:after{
+    content:"";
+    position: absolute;
+    display: block;
+    width:4rem;
+    height:4px;
+    background: blue;
+    bottom:-10px;
+    left:calc(49% - 1rem);
+}
 /* project */
 #projects{
     padding-top:40px;
     padding-bottom:20px;
+}
+#projects h5{
+    position: relative;
 }
  .image{
     height:auto;
@@ -208,9 +227,20 @@ p{
     #contact{
         padding-top:30px;
     }
-    #contact h3{
+    #contact h4{
         font-size:35px;
         text-transform: capitalize;
+        position: relative;
+    }
+    #contact h4:after{
+        content:"";
+    position: absolute;
+    display: block;
+    width:4rem;
+    height:4px;
+    background: blue;
+    bottom:0px;
+    left:calc(50% - 1rem);
     }
     #contact .contactme-form{
         box-shadow:0px 0px 10px;
@@ -269,10 +299,10 @@ p{
 #footer p{
 font-size: 20px;
 }
- #footer .social-media-icon ul li a:hover{
+ /* #footer .social-media-icon ul li a:hover{
    transform:translateY
 
-}
+} */
 
 
 
